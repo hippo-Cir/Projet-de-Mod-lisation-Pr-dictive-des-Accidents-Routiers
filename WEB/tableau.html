@@ -1,0 +1,123 @@
+<!--
+\\Author: Prenom NOM
+\\Login : etuXXX
+\\Groupe: ISEN X GROUPE Y
+\\Annee:
+-->
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accidents 2009</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tableau.css">
+    <script src="js/ajax.js" defer></script>
+    <script src="js/filtrage_tableau.js" defer></script>
+  </head>
+  <body>
+    <div class="contenant">
+      <!-- Header -->
+      <nav class="dropdownmenu" id="header">
+        <li><a id="logo_container" href="index.html"><img id="logo" src="img\logo.png" alt="logo"></a></li>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="ajout.html">Ajouter</a></li>
+            <li><a href="#">Visualisation</a>
+                <ul id="submenu">
+                    <li><a href="carte.html">Carte</a></li>
+                    <li><a href="tableau.html">Tableau</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+      <!-- Home -->
+      <div class="filtre">
+        <h1>Filtre</h1>
+        <form id="filtreForm" method="post" action="php/request.php/filtre">
+          <label for="mois">Mois :</label>
+          <select id="mois" name="mois">
+            <option value="">Tous</option>
+            <option value="1">Janvier</option>
+            <option value="2">Février</option>
+            <option value ="3">Mars</option>
+            <option value ="4">Avril</option>
+            <option value ="5">Mai</option>
+            <option value ="6">Juin</option>
+            <option value ="7">Juillet</option>
+            <option value ="8">Août</option>
+            <option value ="9">Septembre</option>
+            <option value ="10">Octobre</option>
+            <option value ="11">Novembre</option>
+            <option value ="12">Décembre</option>
+
+          </select>
+      
+          <label for="descr_grav">Gravité :</label>
+          <select id="descr_grav" name="descr_grav">
+            <option value="">Tous</option>
+            <option value="Pas grave">Pas grave</option>
+            <option value="Grave">Grave</option>
+          </select>
+      
+          <label for="age">Âge :</label>
+          <select id="age" name="age">
+            <option value="">Tous</option>
+            <option value="0-20">0-20</option>
+            <option value="20-40">20-40</option>
+            <option value="40-60">40-60</option>
+            <option value="60-80">60-80</option>
+            <option value="80-90">80-90</option>
+          </select>
+
+          <br>
+          <label for="choix">Choix de la table :</label>
+          <select id="choix" name="choix">
+            <option value="0" selected>Anciens accidents</option>
+            <option value="1">Nouveaux accidents</option>
+          </select>
+          
+          <label for="limit">Taille du tableau :</label>
+          <select id="limit" name="limit">
+            <option value="10" selected>10</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+          </select>
+      
+          <button type="submit">Filtrer</button>
+        </form>
+     
+</div>
+<div class="contenant2">
+    <h1>Liste des accidents</h1>
+    <div id="affiche">
+        <table class="tableau">
+            <th>Ville</th>
+            <th>Date</th>
+            <th>Météo</th>
+            <th>Aglomération</th>
+            <th>Luminosité</th>
+            <th>Dispositif de sécurité</th>
+            <th>État de la toute</th>
+            <th>Type de collision</th>
+            <th>Catégorie du véhicule</th>
+        </table>
+    </div>
+</div>
+    
+      <!-- Footer -->
+      <footer>
+        <p>@Groupe 1 - Trinôme 6</p>
+      </footer>
+      </div>
+ 
+    <!-- Footer -->
+
+  </body>
+</html>
+

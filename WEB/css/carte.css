@@ -1,0 +1,76 @@
+form {
+    padding: 1rem;
+    background: #FCB5AA;
+    border-radius: 20px;
+    margin: 0.5rem;
+    box-shadow: #5E2B45 2px 2px 3px;
+}
+
+#map {
+    width: 350px;
+    height: 400px;
+    /* Ajustez la hauteur selon vos besoins */
+    box-shadow: #5E2B45 10px 10px 10px;
+    border-radius: 20px;
+}
+
+.marker {
+    background-color: #FA6782;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.marker_cluster {
+    background-color: #95c4ee;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.marker_res {
+    background-color: #FA6782;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+#info {
+    
+    padding: 1rem;
+    box-shadow: #5E2B45 10px 10px 10px;
+    height: fit-content;
+    width: 60%;
+    background-color:  #FCB5AA;
+    color: #5E2B45;
+
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+/* 
+.contenant2{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+flex-wrap: nowrap;
+} */
+.cluster{
+font-size: 15px;
+color: #FFFAF1;
+text-shadow: #5E2B45 1px 1px 1px;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+}
+
+#resulat{
+width: 300px;
+height: 50px;
+}

@@ -1,0 +1,52 @@
+.tableau {
+    width: 100%;
+    border-collapse: collapse;
+    }
+
+    .tableau tr:nth-child(even) {
+    background-color: #FCB5AA; 
+    }
+    .tableau tr:nth-child(odd) {
+    background-color:  #FFDFD1; 
+    }
+
+    .tableau tr:hover {
+    background-color: #FFFAF1; /* Couleur de fond au survol d'une ligne */
+    }
+
+    .tableau th,
+    .tableau td {
+    padding: 8px;
+    text-align: left;
+    }
+
+    .tableau tr {
+        border: 1px solid #5E2B45;
+    }
+
+    .tableau th {
+    background-color:#5E2B45; /* Couleur de fond pour les cellules d'en-tête */
+    color: #FFDFD1; /* Couleur du texte pour les cellules d'en-tête */
+    }
+
+form {
+    padding: 1rem;
+    background: #FCB5AA;
+    border-radius: 20px;
+    margin: 0.5rem;
+    box-shadow: #5E2B45 2px 2px 3px;
+}
+
+#predictionButton{
+    margin: 1rem;
+    width: 60%;
+}
+#affiche{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+td button{
+    margin:0;
+}

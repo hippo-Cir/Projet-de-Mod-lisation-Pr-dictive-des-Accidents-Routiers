@@ -1,0 +1,261 @@
+/**
+Author: Gauthier LE MOAL
+Login : etu113
+Groupe: ISEN A3 GROUPE 1 Trinôme 6
+Annee: 2022-2023
+*/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,200;1,300&family=Red+Hat+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,200;1,300&family=Red+Hat+Display:wght@400;700&display=swap');
+/* Body */
+* {
+    margin : 0;
+    padding: 0;
+}
+body {
+    font-family: "Montserrat", "Raleway", sans-serif;
+    background: #FFDFD1;
+  }
+
+h1{
+    color:#5E2B45;
+    margin: 1rem;
+    text-align: center;
+}
+
+.retour{
+    text-decoration: none;
+    display: block;
+    background: #5E2B45;
+    padding:10px ;
+    border-radius: 50px;
+    margin: 1rem;
+    color:#FCB5A9;
+    font-weight: 600;
+}
+.retour:hover{
+    background:#FCB5AA;
+    color:#5E2B45;
+    border: solid 2px #5E2B45;
+}
+
+.contenant2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin : 2em;
+}
+
+ #dessin_container {
+    margin-top : -75px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+    width: 100%;
+    flex-flow: column;
+    color: #FCB5AA;  
+}
+
+#dessin {
+    margin-top: 1em;
+    background-color: transparent;
+    width: 550px;
+    height: 395px;
+}
+
+ #text_container {
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    font-style: semi-bold;
+    margin-top: 50px;
+
+}
+.contenant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    flex-wrap: nowrap;
+    min-height: 100vh;
+    height: 100%;
+}
+
+#text {
+    padding-top: 1em;
+    padding-right: 15%;
+    padding-bottom: 1em;
+    padding-left: 15%;
+    text-align: justify;
+    position: relative;
+    top: 1rem;
+    color: #5E2B45;
+}
+
+/* Header level 1 */
+/**/ nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #5E2B45;
+    font-size : bold 70px;
+    list-style-type : none;
+    box-sizing: border-box;
+    font: "Raleway";
+} 
+
+#logo_container {
+    margin-top: 1px;
+}
+
+#logo{
+    width:100px;
+    cursor: pointer;
+}
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul {
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	color: #FCB5AA;
+	display: block;
+	font: bold 20px'Montserrat';
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.menu li:hover a {
+	background: #FCB5AA;
+    color: #5E2B45;
+    border-radius: 8px;
+    
+}
+#submenu li:first-child a {
+    border-radius: 0;
+}
+#submenu li:last-child a{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.menu li:nth-last-child(1):hover a:first-child{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 35px;
+	visibility: hidden;
+	z-index: 9999;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 40px;	/* adjust this as per top nav padding top & bottom comes */
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background:   #FFDFD1;
+    color: #5E2B45;
+    border-radius: 8px;
+}
+#submenu a {
+	background-color:#FCB5AA;
+    
+}
+#ia{
+    width:300px;
+}
+#text li {
+	margin-left: 5%;
+}
+
+/* section */
+ figcaption {
+    background-color: #5E2B45;
+    font: italic smaller "Raleway";
+    padding: 3px;
+    margin-top: -50px;
+    margin-bottom: 1em;
+}
+
+footer {
+    display :flex;
+
+    width: 100%;
+    height: 50px;
+    color: #FCB5AA;
+    background: #5E2B45;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    margin-top: 1em;
+}
+#resultat{
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFAF1;
+    padding: 1rem;
+    background: #FA6782;
+    border-radius: 10px;
+    margin: 1rem;
+    box-shadow: 5px 5px 5px #5E2B45;
+    transition: all 0.5 ease-in-out;
+}
+
+
+select {
+    border:none;
+    padding:5px;
+    border-radius: 10px;
+        background: #FFDFD1;
+    box-shadow: #5E2B45 5px 5px 5px ;
+}
+
+button{
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    background:#5E2B45;
+    color:#FCB5AA;
+    font-weight: 600;
+    transition: all 0.5s ease-out;
+}
+button:hover{
+    
+    background:#FCB5AA;
+    color:#5E2B45;
+    border: solid 5px #5E2B45;
+}
+#filtreForm label + select{
+    margin: 1rem;
+
+}

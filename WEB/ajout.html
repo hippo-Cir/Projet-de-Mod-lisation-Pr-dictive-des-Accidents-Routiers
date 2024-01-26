@@ -1,0 +1,102 @@
+<!--
+\\Author: Gauthier LE MOAL
+\\Login : etu113
+\\Groupe: ISEN A3 GROUPE 1 Trinôme 6
+\\Annee: 2022-2023
+-->
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Meta tags -->
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Molengo&family=Montserrat:wght@500&family=Raleway:wght@500&display=swap');
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="css/ajout.css">
+    <script src="js/ajax.js" defer></script>
+    <script src="js/select.js" defer></script>
+    <script src="js/ajout.js" defer></script>
+    <!-- Title -->
+
+</head>
+
+<body>
+
+    <div class="contenant">
+        <!-- Header -->
+        <nav class="dropdownmenu" id="header">
+            <li><a id="logo_container" href="index.html"><img id="logo" src="img\logo.png" alt="logo"></a></li>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="ajout.html">Ajouter</a></li>
+                <li><a href="#">Visualisation</a>
+                    <ul id="submenu">
+                        <li><a href="carte.html">Carte</a></li>
+                        <li><a href="tableau.html">Tableau</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- Home --> <h1>Formulaire pour ajouter un accident</h1>
+        <div id="f_container">
+           
+            <form id="addForm" method="post" action="php/ajout.php/form">
+                <p>
+                    <label for="date_heure">Date/Heure:</label>
+                    <input type="datetime-local" id="date_heure"
+                    name="date_heure"required>
+                </p>
+
+                <p>
+                    <label for="age">Âge du Conducteur:</label>
+                    <input type="number" id="age"  min="14" max="101" step="1"required>
+                </p>
+                <p>
+                    <label for="descr_athmos">Description Atmosphère:</label>
+                    <select class="descr_athmo" id="descr_athmos" required></select>
+                </p>
+                <p>
+                    <label for="ville">Ville:</label>
+                    <select class="ville" id="ville" required></select>
+                </p>
+                <p>
+                    <label for="descr_lumi">Description Lumière:</label>
+                    <select class="descr_lum" id="descr_lumi" required></select>
+                </p>
+                <p>
+                    <label for="descr_dispo_secur">Description Dispositif de Sécurité:</label>
+                    <select type="text" class="descr_dispo_secu" id="descr_dispo_secur" required></select>
+                </p>
+                <p>
+                    <label for="descr_etat_surfa">Description État de la Surface:</label>
+                    <select type="text" class="descr_etat_surf" id="descr_etat_surfa" required></select>
+                </p>
+                <p>
+                    <label for="descr_cat_vehi">Description Catégorie de Véhicule:</label>
+                    <select type="text" class="descr_cat_veh" id="descr_cat_vehi" required></select>
+                </p>
+                <label for="descr_agglos">Agglomération :</label>
+                <select type="text" class="descr_agglo" id="descr_agglos" required></select>
+                </p>
+                <label for="descr_type_coli">Description Type de Collision:</label>
+                <select type="text" class="descr_type_col" id="descr_type_coli" required></select>
+                </p id="dernier_p">
+                <input type="submit" id="submit_button" value="Soumettre">
+                </p>
+            </form>
+        </div>
+
+
+        <footer>
+            <p>@Groupe 1 - Trinôme 6</p>
+        </footer>
+    </div>
+</body>
+
+</html>
